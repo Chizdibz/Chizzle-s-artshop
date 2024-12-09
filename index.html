@@ -1,0 +1,94 @@
+<!doctype html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frozen Yogurt Shop</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/mobile.css">
+    <script src="js/mobile.js" type="text/javascript"></script>
+
+    <style>
+        /* This targets the .logo1 image */
+        .logo1 img {
+            width: 100px;  /* Set the width to make the logo smaller */
+            height: auto;  /* Maintain the aspect ratio */
+            position: relative;  /* Fix the position relative to the screen */
+            top: 10px;  /* Adjust to place the logo 10px from the top */
+            right: 10px;  /* Adjust to place the logo 10px from the right */
+            z-index: 1000;  /* Ensure the logo stays on top of other elements */
+        }
+
+        /* Style for the welcome message */
+        .welcome-message {
+            font-size: 24px;
+            color: #4CAF50; /* Green text */
+            text-align: center;
+            margin-top: 20px;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="page">
+        <div id="header">
+            <div>
+                <a href="index.html" class="logo1">
+                    <img src="cimages/Logo chizzly.png" alt="logo1">
+                </a>
+                <ul id="navigation">
+                    <li class="selected">
+                        <a href="index.html">Home</a>
+                    </li>
+                    
+                    <li>
+                        <a href="contact.html">Shop</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Welcoming message that will appear only on the homepage -->
+        <div id="welcomeMessage" class="welcome-message"></div>
+
+        <div id="body" class="home">
+            <div class="header">
+                <img src="cimages/eastblue.png" alt="">
+                <div>
+                    <a href="product.html">Open Comms!</a>
+                </div>
+            </div>
+            <div class="body">
+                <div>
+                    <div>
+                        <h1>Hi Welcome to</h1>
+                        <h2>Chizzly's Art Shop</h2>
+                        <p>I am Benedicta Chiara Dorothea, known as Cxizzle, a digital artist based on Tokyo. I create digital portraits, landscapes, and you can purchase it on my store!.</p>
+                    </div>
+                    <img src="cimages/shinrin.PNG" alt="hinrin" class="shinrin-img">
+                </div>
+            </div>
+
+            
+
+        <div id="footer">
+            <div>
+                <div class="connect">
+                    <a href="https://x.com/m140xu" class="twitter">twitter</a>
+                </div>
+                <p>&copy; 2024 Benedicta Chiara Dorothea 23229525. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript to display the welcoming message only on the homepage -->
+    <script>
+        // Check if the current page is the index page (Home)
+        if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
+            // Display the welcoming message on the index page
+            document.getElementById('welcomeMessage').innerText = 'Welcome to Chizzly\'s Art Shop! We are so glad to have you here!';
+        }
+    </script>
+</body>
+</html>
